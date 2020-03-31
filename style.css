@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: stretch;
+  background-color: black;
+  color: whitesmoke;
+  text-shadow: 2px 2px black;
+}
+
+#heading {
+  text-align: center;
+  margin: 5px;
+}
+
+#form-wrapper {
+  text-align: center;
+}
+
+#button-wrapper {
+  margin: 10px;
+}
+
+#results-wrapper {
+  /* border: solid thin black; */
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 330px;
+  margin: 10px auto;
+}
+
+#weather-main {
+  /* border: solid thin green; */
+  width: 320px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-template-rows: 75% auto;
+  text-align: center;
+}
+
+#weather-details {
+  /* border: solid thin red; */
+  width: 320px;
+  height: 100px;
+  padding: 10px 30px 0px 30px;
+}
+
+#button-wrapper {
+  flex-direction: row;
+  align-self: center;
+}
+
+#icon {
+  grid-column-start: 1;
+}
+
+#icon-wrapper {
+  text-align: center;
+}
+
+#main {
+  grid-column-start: -1;
+}
+
+#description {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 2;
+  font-style: italic;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+#location {
+  font-size: 2rem;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.info-label {
+  font-size: 1.7rem;
+}
+
+.active {
+  background-color: orange;
+}
+
+button {
+  height: 30px;
+  width: 60px;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+}

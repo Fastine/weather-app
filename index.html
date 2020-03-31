@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=320, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 id="heading">Weather App</h1>
+
+    <div id="form-wrapper">
+      <form action="submit" id="search">
+        <input
+          type="text"
+          name="searchBar"
+          id="searchBar"
+          placeholder="Enter a city name..."
+        />
+      </form>
+    </div>
+    <div id="results-wrapper">
+      <div id="button-wrapper">
+        <button id="celsius" class="btn">C</button>
+        <button id="farenheit" class="btn active">F</button>
+      </div>
+      <div id="weather-main">
+        <div id="icon-wrapper">
+          <img src="" id="icon" />
+          <span id="description"></span>
+        </div>
+        <div id="main">
+          <span id="date"></span>
+          <span id="location"></span>
+          <p>Current Temp: &nbsp;<span id="currentTemp" class="info-label">--&deg;</span></p></br>
+          <p>Feels Like:  &nbsp;<span id="feelsLike" class="info-label">--&deg;</span></p>
+        </div>
+      </div>
+      <div id="weather-details">
+        <div id="temp-range">
+          <span class="left">Low: <span id="tempLow">--&deg;</span></span>
+          <span class="right">High: <span id="tempHigh">--&deg;</span></span>
+        </div></br>
+        <div id="otherDetails">
+          <span class="left">Humidity: <span id="humidity"></span></span>
+          <span class="right">Wind: <span id="wind"></span></span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
